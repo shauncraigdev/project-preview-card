@@ -87,6 +87,7 @@ body {
   font-family: var(--FF-NORMAL);
   font-weight: var(--FW-SOFT);
   margin: 1rem;
+  display: grid;
 }
 
 .section__image {
@@ -97,19 +98,28 @@ body {
 .article {
   border-radius: 1rem;
   background-color: var(--COLOR-WHITE);
+  display: grid;
+  max-width: 600px;
 }
 
 .section__card {
   margin: 1rem;
+  display: grid;
 }
 
 .perfume {
   text-transform: uppercase;
 }
 
+.section__h1 {
+  font-size: 1.75rem;
+}
+
 .section__price {
   display: flex;
   gap: 1rem;
+  align-items: center;
+  margin-top: 0.5em;
 }
 
 .price {
@@ -124,12 +134,22 @@ body {
 
 .button {
   background-color: var(--COLOR-DARK);
+  border: none;
   color: var(--COLOR-WHITE);
   border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.85rem;
 }
 
 .button:hover,
 .button:focus {
   cursor: pointer;
   background-color: var(--COLOR-DARKGREEN);
+}
+
+@media (min-width: 600px) {
+  .article {
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+  }
 }

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
   <title>Product preview card component</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,25 +15,24 @@
   <main>
     <article class="article">
 
-      <section class="section__image">
+      <picture class="section__image">
+        <source srcset="/img/image-product-desktop.jpg" media="(min-width: 600px)">
         <img src="/img/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
-      </section>
+      </picture>
 
       <section class="section__card">
         <p class="perfume">Perfume</p>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <h1 class="section__h1">Gabrielle Essence Eau De Parfum</h1>
         <p>
           A floral, solar and voluptous interpretation composed by Oliver Polge, Perfumer-Creater for the House of
           CHANEL.
         </p>
-        <section class="section__price">
+        <div class="section__price">
           <p class="price">$149.99</p>
           <p class="original-price">$169.99</p>
-        </section>
+        </div>
+        <button class="button">Add to Cart</button>
       </section>
-
-
-      <button class="button">Add to Cart</button>
 
     </article>
   </main>
