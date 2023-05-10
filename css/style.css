@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  /* Colors */
+  --COLOR-DARK: hsl(158, 36%, 37%);
+  --COLOR-DARKGREEN: hsl(158, 36%, 60%);
+  --COLOR-CREAM: hsl(30, 38%, 92%);
+  --COLOR-BLACK: hsl(212, 21%, 14%);
+  --COLOR-GRAY: hsl(228, 12%, 48%);
+  --COLOR-WHITE: hsl(0, 0%, 100%);
+  /* Fonts */
+  --FF-NORMAL: "Montserrat", sans-serif;
+  --FF-OTHER: "Fraunces", serif;
+  --FW-SOFT: 500;
+  --FW-BOLD: 700;
+}
+
+/* Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* General styles */
+
+body {
+  background-color: var(--COLOR-CREAM);
+  font-family: var(--FF-NORMAL);
+  font-weight: var(--FW-SOFT);
+  margin: 1rem;
+}
+
+.section__image {
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+
+.article {
+  border-radius: 1rem;
+  background-color: var(--COLOR-WHITE);
+}
+
+.section__card {
+  margin: 1rem;
+}
+
+.perfume {
+  text-transform: uppercase;
+}
+
+.section__price {
+  display: flex;
+  gap: 1rem;
+}
+
+.price {
+  color: var(--COLOR-DARK);
+  font-size: 2rem;
+  font-weight: var(--FW-BOLD);
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+.button {
+  background-color: var(--COLOR-DARK);
+  color: var(--COLOR-WHITE);
+  border-radius: 0.5rem;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background-color: var(--COLOR-DARKGREEN);
+}
