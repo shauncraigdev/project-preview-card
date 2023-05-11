@@ -3,7 +3,7 @@
 :root {
   /* Colors */
   --COLOR-DARK: hsl(158, 36%, 37%);
-  --COLOR-DARKGREEN: hsl(158, 36%, 60%);
+  --COLOR-DARKGREEN: hsl(160, 24%, 35%);
   --COLOR-CREAM: hsl(30, 38%, 92%);
   --COLOR-BLACK: hsl(212, 21%, 14%);
   --COLOR-GRAY: hsl(228, 12%, 48%);
@@ -88,6 +88,7 @@ body {
   font-weight: var(--FW-SOFT);
   margin: 1rem;
   display: grid;
+  place-content: center;
 }
 
 .section__image {
@@ -105,9 +106,12 @@ body {
 .section__card {
   margin: 1rem;
   display: grid;
+  font-family: var(--FF-NORMAL);
+  font-weight: var(--FW-SOFT);
 }
 
 .perfume {
+  letter-spacing: 5px;
   text-transform: uppercase;
 }
 
@@ -150,6 +154,5 @@ body {
 @media (min-width: 600px) {
   .article {
     grid-template-columns: 1fr 1fr;
-    max-width: 600px;
   }
 }
